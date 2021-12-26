@@ -1,0 +1,7 @@
+numpy==1.21.4
+opencv-python==4.5.4.58
+opencv-contrib-python==4.5.4.58
+streamlit==1.2.0
+fastapi==0.70.1
+python-multipart
+uvicorn
