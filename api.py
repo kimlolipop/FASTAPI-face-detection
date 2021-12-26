@@ -65,5 +65,5 @@ async def create(file: UploadFile = File(...)):
 
         
 
-if __name__ == '__main__':
-    uvicorn.run('api:app',port=7001,reload=True)
+# if __name__ == '__main__':
+#     uvicorn.run('api:app',port=7001,reload=True)
