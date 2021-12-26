@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 import numpy as np
 import cv2
-# import uvicorn
+import uvicorn
 import face_detection_engine
 
 import io
@@ -64,5 +64,5 @@ async def create(file: UploadFile = File(...)):
 
         
 
-# if __name__ == '__main__':
-#     uvicorn.run('api:app',port=7001,reload=True)
+if __name__ == '__main__':
+    uvicorn.run('api:app',port=7001,reload=True)

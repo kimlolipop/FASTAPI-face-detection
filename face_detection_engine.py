@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys
 import cv2
-import argparse
+# import argparse
 
 
 
@@ -46,28 +46,29 @@ def render(image, faces, nogui=False):
 
 
 def main(img):
-    parser = argparse.ArgumentParser(description='Simple Face Detection.')
-    parser.add_argument("-s", "--source",
-                        type=str,
-                        default="0",
-                        help="Source. Path to the input image.")
+#     parser = argparse.ArgumentParser(description='Simple Face Detection.')
+    
+#     parser.add_argument("-s", "--source",
+#                         type=str,
+#                         default="0",
+#                         help="Source. Path to the input image.")
 
-    parser.add_argument("-m", "--model",
-                       type=str,
-                       default="haarcascade_frontalface_default.xml",
-                       help="Model path. Path to the 'haarcascade_frontalface_default.xml'.")
+#     parser.add_argument("-m", "--model",
+#                        type=str,
+#                        default="haarcascade_frontalface_default.xml",
+#                        help="Model path. Path to the 'haarcascade_frontalface_default.xml'.")
 
-    parser.add_argument("-u", "--nogui",
-                        type=bool,
-                        default=False,
-                        help="Enable GUI?. Disable GUI. Default False.")
+#     parser.add_argument("-u", "--nogui",
+#                         type=bool,
+#                         default=False,
+#                         help="Enable GUI?. Disable GUI. Default False.")
 
-    args = parser.parse_args()
-    print("Using model", args.model)
+#     args = parser.parse_args()
+#     print("Using model", args.model)
 
     # Run the face detection
     image, gray = webcam_capture(img)      
-    detected_faces = face_detect(gray, cascasdepath=args.model)
+    detected_faces = face_detect(gray)#, cascasdepath=args.model)
     
     
     try:
