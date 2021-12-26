@@ -72,8 +72,8 @@ def main(img):
     
     try:
         iamge, n_faces = render(image, detected_faces, nogui=False)
-        cv2.imshow("Faces found", image)
-        cv2.waitKey(0)
+        # cv2.imshow("Faces found", image)
+        # cv2.waitKey(0)
         return image, n_faces
 
     except:

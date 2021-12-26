@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 import numpy as np
 import cv2
-import uvicorn
+# import uvicorn
 import face_detection_engine
 
 import io
@@ -9,7 +9,6 @@ from starlette.responses import StreamingResponse
 from urllib.request import urlopen
 
 app = FastAPI()
-
 
 
 
